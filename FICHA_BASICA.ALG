@@ -2,7 +2,7 @@ Algoritmo "ficha_basica"
 
 Var
 
-   classe, FOR1, FOR2, DES1, DES2, CON1, CON2, CON3, SAB1, SAB2, nivel : inteiro
+   classe, FOR1, DES1, CON1, CON2, CON3, SAB1, nivel : inteiro
 
 
 Inicio
@@ -12,16 +12,16 @@ Inicio
    escreval("Qual sua Classe: 1 - Guerreiro, 2 - Mago ou 3 - Clerigo?")
    leia(classe)
    escreval
-   escreval("Qual seu Nível?")
+   escreval("Qual seu NÃ­vel?")
    leia(nivel)
    escreval
-   escreval("Qual o seu valor de Força?")
+   escreval("Qual o seu valor de ForÃ§a?")
    leia(FOR1)
    escreval
    escreval("Qual o seu valor de Destreza?")
    leia(DES1)
    escreval
-   escreval("Qual o seu valor de Constituição?")
+   escreval("Qual o seu valor de ConstituiÃ§Ã£o?")
    leia(CON1)
    escreval
    escreval("Qual o seu valor de Sabedoria?")
@@ -29,19 +29,19 @@ Inicio
    escreval
    
    CON2 <- CON1 + 2
-    CON3 <- CON1 - 2
+   CON3 <- CON1 - 2
 
    se (classe = 1) entao
-     escreval("Sua ficha é...")
+     escreval("Sua ficha Ã©...")
      escreval
      escreval("Classe: Guerreiro")
-     escreval("Nível: ", nivel)
+     escreval("NÃ­vel: ", nivel)
      escreval
-     escreval("FORÇA: ", FOR1 + 2)
+     escreval("FORÃ‡A: ", FOR1 + 2)
      escreval
      escreval("DESTREZA: ", DES1)
      escreval
-     escreval("CONSTITUIÇÃO: ", CON1 + 2)
+     escreval("CONSTITUIÃ‡ÃƒO: ", CON1 + 2)
      escreval
      escreval("SABEDORIA: ", SAB1)
      escreval
@@ -49,32 +49,32 @@ Inicio
      escreval
    senao
      se (classe = 2) entao
-       escreval("Sua ficha é...")
+       escreval("Sua ficha Ã©...")
        escreval
        escreval("Classe: Mago")
-       escreval("Nível: ", nivel)
+       escreval("NÃ­vel: ", nivel)
        escreval
-       escreval("FORÇA: ", FOR1 - 2)
+       escreval("FORÃ‡A: ", FOR1 - 2)
        escreval
        escreval("DESTREZA: ", DES1)
        escreval
-       escreval("CONSTITUIÇÃO: ", CON1 - 2)
+       escreval("CONSTITUIÃ‡ÃƒO: ", CON1 - 2)
        escreval
        escreval("SABEDORIA: ", SAB1 + 4)
        escreval
        escreval("PONTOS DE VIDA: ", ((CON3 - 10) \ 2) + 6)
        escreval
      senao
-         escreval("Sua ficha é...")
+         escreval("Sua ficha Ã©...")
          escreval
-         escreval("Classe: Clérigo")
-         escreval("Nível: ", nivel)
+         escreval("Classe: ClÃ©rigo")
+         escreval("NÃ­vel: ", nivel)
          escreval
-         escreval("FORÇA: ", FOR1 + 2)
+         escreval("FORÃ‡A: ", FOR1 + 2)
          escreval
          escreval("DESTREZA: ", DES1)
          escreval
-         escreval("CONSTITUIÇÃO: ", CON1)
+         escreval("CONSTITUIÃ‡ÃƒO: ", CON1)
          escreval
          escreval("SABEDORIA: ", SAB1 + 2)
          escreval
